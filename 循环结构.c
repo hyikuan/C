@@ -79,3 +79,26 @@ int main(void)
 }
 
 
+// 9. 输出100～200中的所有素数。
+// 采用了和附加题中相同的做法。
+#include<stdio.h>
+#include<stdlib.h>
+bool isprime(int a)
+{
+	bool t = true;
+	for (int i = 2; i < a; i++)
+		if (a%i == 0) {
+			t = false;
+			break;
+		}
+	return t;
+}
+
+int main(void)
+{
+	for (int i = 100; i <= 200; i++)
+		if (isprime(i)) printf_s("%d\n", i);
+
+	system("pause");
+	return 0;
+}
