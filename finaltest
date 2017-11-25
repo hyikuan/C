@@ -86,7 +86,7 @@ int main(void)
 {
 	int prime=0;
 	for (int i=100;i<=200;i++) if (isprime(i)) {prime++;printf("%d\n",i);}
-	printf("100到200之间直竖的个数为：\%d\n",prime);
+	printf("100到200之间质数的个数为：%d\n",prime);
 
 	system("pause");
 	return 0;
